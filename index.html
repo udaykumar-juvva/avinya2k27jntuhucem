@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVINYA 2K27</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AVINYA 2K27</div>
+    <div class="nav-right">
+        <a href="#" class="about-btn" id="openAbout">About</a>
+    </div>
+</nav>
+
+<!-- PARTICLES -->
+<canvas id="particles"></canvas>
+
+<header>
+    <h1 class="rainbow">AVINYA 2K27</h1>
+    <p class="sub">JNTUHUCEM – CSE</p>
+</header>
+
+<!-- TECHNICAL EVENTS -->
+<section>
+<h2 class="section-title">Technical Events</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/techquiz.jpg">
+<div class="card-overlay"><h3>QuizTech Arena</h3></div>
+</div>
+
+<div class="card">
+<img src="images/debug.png">
+<div class="card-overlay"><h3>Debugging Contest</h3></div>
+</div>
+
+<div class="card">
+<img src="images/pattern.png">
+<div class="card-overlay"><h3>Pattern Hunters</h3></div>
+</div>
+
+<div class="card">
+<img src="images/codepredictor.png">
+<div class="card-overlay"><h3>Code Predictor</h3></div>
+</div>
+
+<div class="card">
+<img src="images/emoji.png">
+<div class="card-overlay"><h3>Emoji Decode</h3></div>
+</div>
+
+<div class="card">
+<img src="images/innovative.png">
+<div class="card-overlay"><h3>Innovative X</h3></div>
+</div>
+
+</div>
+</section>
+
+<!-- NON TECHNICAL EVENTS -->
+<section>
+<h2 class="section-title">Non-Technical Events</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/blind.png">
+<div class="card-overlay"><h3>Blind Walk</h3></div>
+</div>
+
+<div class="card">
+<img src="images/ballthrow.png">
+<div class="card-overlay"><h3>Ball Throw</h3></div>
+</div>
+
+<div class="card">
+<img src="images/dpcontest.png">
+<div class="card-overlay"><h3>Insta DP Contest</h3></div>
+</div>
+
+<div class="card">
+<img src="images/luckywheel.png">
+<div class="card-overlay"><h3>Lucky Wheel</h3></div>
+</div>
+
+<div class="card">
+<img src="images/disco.png">
+<div class="card-overlay"><h3>Disco Room</h3></div>
+</div>
+
+<div class="card">
+<img src="images/photobooth.png">
+<div class="card-overlay"><h3>PhotoBooth</h3></div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT MODAL -->
+<div id="aboutModal">
+    <div class="about-box">
+
+        <div class="date-badge">
+            <span class="radio-dot"></span>
+            MARCH 6 & 7
+        </div>
+
+        <span id="closeAbout">&times;</span>
+
+        <h2>About AVINYA 2K27</h2>
+
+        <p><strong>Warm Welcome to All!</strong><br>
+        We are proud to announce the grand college FEST at JNTUHUCEM.
+        We warmly welcome students, faculty, and innovators from all over
+        to join this celebration of technology, culture, and networking!
+        </p>
+
+        <h3>The Venue</h3>
+        <p>
+        JNTUHUCEM, Block-1<br>
+        Centenary Colony, Pannur (V)<br>
+        Ramagiri (M), Peddapalli (D)<br>
+        Telangana - 505212
+        </p>
+
+        <h3>The Date</h3>
+        <p>Friday & Saturday</p>
+
+        <h3>Technical Events</h3>
+        <p>
+        Debugging Contest • Pattern Hunters • QuizTech Arena • 
+        Code Predictor • Emoji Decode • Innovative X
+        </p>
+
+        <h3>Non-Technical Events</h3>
+        <p>
+        Blind Walk • Lucky Wheel • Ball Throw • Balloon Battle • 
+        Disco Room • Tap The Treasure • Balloon Burst With Gun • 
+        Spoon Drink • Find The Flag • Rose Dedication • 
+        Insta DP Contest • Coin Balance • Dart Game • 
+        Set The Target • Pencil Art Gallery • Straw Rush
+        </p>
+
+        <p class="developer">
+        Designed & Developed By 
+        <span class="dev-name">JUVVA UDAY KUMAR</span>
+        </p>
+
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+
+<script>
+const openBtn = document.getElementById("openAbout");
+const modal = document.getElementById("aboutModal");
+const closeBtn = document.getElementById("closeAbout");
+
+openBtn.onclick = function(){
+    modal.style.display = "flex";
+}
+
+closeBtn.onclick = function(){
+    modal.style.display = "none";
+}
+
+window.onclick = function(e){
+    if(e.target == modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

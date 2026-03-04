@@ -125,3 +125,20 @@ const observer = new IntersectionObserver((entries) => {
 headings.forEach(heading => {
     observer.observe(heading);
 });
+const openBtn = document.getElementById("openAbout");
+const modal = document.getElementById("aboutModal");
+const closeBtn = document.getElementById("closeAbout");
+
+openBtn.onclick = function(){
+    modal.style.display = "flex";
+}
+
+closeBtn.onclick = function(){
+    modal.style.display = "none";
+}
+
+window.onclick = function(e){
+    if(e.target == modal){
+        modal.style.display = "none";
+    }
+}
